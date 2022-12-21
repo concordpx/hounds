@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Abandon';
+    src: url('@/assets/font/Abandon.ttf') format('openType');
+}
+
+* {
+  color: white;
+  font-family: 'Abandon' !important;
+}
+
+body {
+  background-color: black;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+input {
+  background-color: transparent !important;
+}
+
+.text-black {
+  color: black !important;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px black !important;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: none !important;
+  }
+}
+.cursor {
+    cursor: url('https://cdn.discordapp.com/attachments/914330440771469393/1045738740355698768/finger.png'), auto;
+}
+.bg-image {
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    /* The image used */
+    background-image: url('https://cdn.discordapp.com/attachments/905496996813619201/1054832844079382608/twitban.png');
+    /* Add the blur effect */
+    /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+    image-rendering: pixelated;
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: #000;
+}
+
+
+:root {
+
+  /* FONTS */
+    --onboard-font-family-normal: 'Abandon';
+    --onboard-font-family-semibold: 'Abandon';
+    --onboard-font-family-light: 'Abandon';
+}
+
+.rain-container {
+  position: absolute;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+i {
+  position: absolute;
+  height: 120px;
+  border-radius: 0 0 999px 999px;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-120px);
+  }
+  100% {
+    transform: translateY(calc(100vh + 120px));
+  }
+}
