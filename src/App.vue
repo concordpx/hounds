@@ -47,7 +47,7 @@
               <p class="text-8xl pb-6 text-shadow">Mutant Pixel Hounds</p>
 
               <img class="pt-0 pb-10"
-                   src="https://chocolate-keen-rhinoceros-217.mypinata.cloud/ipfs/QmbQ1y2rmao3fyLHeFDgQSiWFL1mik6HHuvPNm1snqvr1m"
+                   src="https://cdn.discordapp.com/attachments/905496996813619201/1055149334435479633/pixelmutanthoundsrotate.gif"
                    width="420"
                    alt="" />
 
